@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+/dist/
+*.tsbuildinfo
+!extension/dist/
+
+# Secrets — never commit real environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Logs & OS noise
+npm-debug.log*
+*.log
+.DS_Store
+coverage/
+.vite/
